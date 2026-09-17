@@ -19,9 +19,6 @@ a {
   color: inherit;
 }
 
-
-/* HEADER */
-
 .header {
   height: 80px;
   padding: 0 8%;
@@ -68,9 +65,6 @@ nav a:hover {
   color: #9cff00;
 }
 
-
-/* HERO */
-
 .hero {
   min-height: 700px;
   padding: 90px 8%;
@@ -80,12 +74,7 @@ nav a:hover {
   justify-content: space-between;
   gap: 70px;
 
-  background:
-    radial-gradient(
-      circle at 80% 50%,
-      #222d14,
-      #08080d 45%
-    );
+  background: radial-gradient(circle at 80% 50%, #222d14, #08080d 45%);
 }
 
 .hero-content {
@@ -151,9 +140,6 @@ nav a:hover {
   color: #9cff00;
 }
 
-
-/* HERO IMAGE */
-
 .hero-image {
   width: 390px;
   height: 500px;
@@ -196,9 +182,6 @@ nav a:hover {
   color: #aaa;
   font-size: 12px;
 }
-
-
-/* GAMES */
 
 .games-section {
   padding: 110px 8%;
@@ -267,10 +250,7 @@ nav a:hover {
   width: 100%;
   padding: 35px;
 
-  background: linear-gradient(
-    transparent,
-    #050507
-  );
+  background: linear-gradient(transparent, #050507);
 }
 
 .game-info p {
@@ -288,9 +268,6 @@ nav a:hover {
   color: #aaaab2;
   font-size: 14px;
 }
-
-
-/* SETUP */
 
 .setup-section {
   padding: 120px 8%;
@@ -359,9 +336,6 @@ nav a:hover {
   color: #aaaab2;
 }
 
-
-/* GALLERY */
-
 .gallery-section {
   padding: 110px 8%;
   background: #101016;
@@ -389,9 +363,6 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-
-/* STATS */
-
 .stats-section {
   padding: 80px 8%;
 
@@ -415,9 +386,6 @@ nav a:hover {
   font-size: 13px;
   font-weight: bold;
 }
-
-
-/* ABOUT */
 
 .about-section {
   padding: 130px 8%;
@@ -443,9 +411,6 @@ nav a:hover {
   line-height: 1.8;
 }
 
-
-/* CONTACT */
-
 .contact-section {
   margin: 80px 8%;
   padding: 70px;
@@ -470,9 +435,6 @@ nav a:hover {
   color: #9cff00;
 }
 
-
-/* FOOTER */
-
 footer {
   padding: 40px 8%;
 
@@ -494,11 +456,7 @@ footer {
   color: #9cff00;
 }
 
-
-/* RESPONSIVE */
-
 @media (max-width: 900px) {
-
   nav {
     display: none;
   }
@@ -546,9 +504,7 @@ footer {
   }
 }
 
-
 @media (max-width: 600px) {
-
   .header {
     padding: 0 5%;
   }
@@ -600,5 +556,184 @@ footer {
 
   .contact-section h2 {
     font-size: 48px;
+  }
+}
+
+.experience-section {
+  padding: 110px 8%;
+  background: #08080d;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.experience-card {
+  background: #17171f;
+  border: 1px solid #292932;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: #9cff00;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.experience-card div {
+  padding: 25px;
+}
+
+.experience-card span {
+  color: #9cff00;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.experience-card h3 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.experience-card p {
+  color: #9999a3;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* SETUP GALLERY */
+/* ============================= */
+
+.setup-gallery-section {
+  padding: 110px 8%;
+  background: #101016;
+}
+
+.setup-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 20px;
+}
+
+.setup-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+.setup-gallery img:hover {
+  transform: scale(1.03);
+}
+
+.big-photo {
+  grid-row: span 2;
+}
+
+.small-photo {
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* ============================= */
+/* GAMING FEATURES */
+/* ============================= */
+
+.features-section {
+  padding: 110px 8%;
+  background: #08080d;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  position: relative;
+  height: 380px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #292932;
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.feature:hover img {
+  transform: scale(1.08);
+  opacity: 0.8;
+}
+
+.feature-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+
+  background: linear-gradient(transparent, #050507);
+}
+
+.feature-content h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.feature-content p {
+  color: #aaaab2;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .setup-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 200px;
+  }
+
+  .big-photo {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .setup-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .setup-gallery > div {
+    height: 250px;
   }
 }
